@@ -1,3 +1,5 @@
+//36
+
 import java.util.HashMap;
 import java.util.Queue;
 import java.util.LinkedList;
