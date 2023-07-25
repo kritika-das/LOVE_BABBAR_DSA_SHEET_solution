@@ -30,7 +30,7 @@ class Tree {
     }
 }
 
-public class Main {
+public class Posrorder {
     public static void main(String[] args) {
         // Create a binary tree for testing
         Node root = new Node(1);
