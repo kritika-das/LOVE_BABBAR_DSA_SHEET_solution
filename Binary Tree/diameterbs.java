@@ -41,7 +41,7 @@ class Solution {
     }
 }
 
-public class diameter {
+public class diameterbs {
     public static void main(String[] args) {
         // Create a binary tree for testing
         Node root = new Node(1);
