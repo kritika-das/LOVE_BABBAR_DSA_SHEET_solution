@@ -1,0 +1,32 @@
+//2
+import java.util.ArrayList;
+
+class Solution {
+    public ArrayList<Integer> valueEqualToIndex(int[] arr, int n) {
+        ArrayList<Integer> result = new ArrayList<>();
+        
+        for (int i = 0; i < n; i++) {
+            if (arr[i] == i + 1) {  // Considering 1-based indexing
+                result.add(i + 1);  // Add the index to the result
+            }
+        }
+        
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        
+        // Example 1
+        int[] arr1 = {15, 2, 45, 12, 7};
+        int n1 = arr1.length;
+        ArrayList<Integer> result1 = solution.valueEqualToIndex(arr1, n1);
+        System.out.println("Output for Example 1: " + result1);  // Output: [2]
+        
+        // Example 2
+        int[] arr2 = {1};
+        int n2 = arr2.length;
+        ArrayList<Integer> result2 = solution.valueEqualToIndex(arr2, n2);
+        System.out.println("Output for Example 2: " + result2);  // Output: [1]
+    }
+}
